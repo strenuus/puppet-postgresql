@@ -3,7 +3,7 @@ require 'formula'
 class Postgresql < Formula
   homepage 'http://www.postgresql.org/'
   url 'http://ftp.postgresql.org/pub/source/v9.2.2/postgresql-9.2.2.tar.bz2'
-  sha1 'c75fd5696af02a275a104260eac8b3a4abe35682'
+  sha1 'edadf238bcf51bd6e92dfe2f8afb3665510297a6'
   version '9.2.2-boxen2'
 
   depends_on 'ossp-uuid'
