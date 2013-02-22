@@ -17,12 +17,13 @@ class postgresql {
     owner   => 'root'
   }
 
+  # Set max shared memory parameters to 4GB
   sysctl::set { 'kern.sysv.shmmax':
-    value => 1610612736
+    value => 4294967296
   }
 
   sysctl::set { 'kern.sysv.shmall':
-    value => 393216
+    value => 1048576
   }
 
   homebrew::formula { 'postgresql':
